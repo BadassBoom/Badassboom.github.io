@@ -1,0 +1,183 @@
+html, body {
+    height: 100%;
+    color: #323232;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+p{
+    display: block;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+}
+
+h2 {
+    font-family: 'Proza Libre', sans-serif;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style-type: disc;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a {
+    color: #323232;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+#logo {
+    margin: 0;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;  
+}
+
+.nav-item {
+    margin: 8px;
+}
+
+main {
+    display: block;
+}
+
+section {
+    padding: 16px 0;
+    display: block;
+}
+
+.about-me-container {
+    display: flex;
+}
+
+.about-me-text-container{
+    margin-right: 16px;
+}
+
+.portrait {
+    width: 300px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width:600px){
+    .about-me-container {
+        flex-direction: column;
+    }
+}
+
+details {
+    cursor: pointer;
+    display: block;
+}
+
+details[open] > summary:first-of-type {
+    list-style-type: disclosure-open;
+}
+
+details > summary:first-of-type {
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: inside disclosure-closed;
+}
+
+.project-image {
+    width: 50%;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+.project-title h3 {
+    display: inline;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+summary {
+    list-style-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg");
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: 8px;
+}
+
+.fab, .far {
+    font-weight: 400;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.fa, .fab, .fad, .fal, .far, .fas , .fa-brands {
+    display: inline-block;
+    font-size: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+i {
+    font-style: italic;
+}
+
+footer {
+    margin-top: auto;
+    padding: 12px 0;
+    text-align: center;
+    display: block;
+}
+
+.heart {
+    color: red;
+}

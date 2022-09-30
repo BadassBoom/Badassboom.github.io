@@ -1,9 +1,167 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aa6bd16064.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;400;500;600&family=Proza+Libre:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Nice meeting you</title>
+</head>
 <body>
-  <h1>BadassBoom</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <nav>
+        <h2 id="logo">Badass Boom</h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#about-me">About me</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about-me">  
+            <div class="about-me-container">
+                <div class="about-me-text-container">
+                    <h2>About Me</h2>
+                    <p>
+                        Hi! I'm Jaroslav, future bilionaire and am an Ukrainian programmer
+                        and 3d designer. I have serious passion for game & apps development, UI effects
+                        and creating intuitive dynamic user expiriences. 
+                    </p>
+                    <p>
+                        I'm quietly curious naturally, and perpetually working on improving my chops. Well-organised person, problem-solver, independed employee.
+                        Fan of NBA, outdoor activities, TV series and
+                        neurobiology.
+                    </p>
+                    <p>
+                        Interested in the entire Machine Learning spectrum and working on ambitious
+                        projects.Over the years, I've used hundreds of web and mobile apps in different industries and verticals. 
+                        Eventually, I decided that it would be a fun challenge to try designing and building my own.
+                    </p>
+                    <p>
+                        Fun fact! I've been programing for
+                        <span id="time-container">196,893,712</span>
+                        seconds!
+                    </p>
+                </div>
+            <img src="photoOfMe.jpg" class="portrait">
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <details class="projects">
+                <summary class="project-title">
+                    <h3>Tesla website recreation</h3>
+                </summary>
+                <img class="project-image" src="tesla-hero1.png">
+                <img class="project-image" src="tesla-hero2.png">
+                <img class="project-image" src="tesla-hero3.png">
+                <img class="project-image" src="tesla-hero4.png">
+                <img class="project-image" src="tesla-hero5.png">
+            </details>
+            <details class="projects">
+                <summary class="project-title">
+                    <h3>RedBull Racing website recreation</h3>
+                </summary>
+                <img class="project-image" src="redbull-hero.jpg">
+            </details>
+            <details class="projects">
+                <summary class="project-title">
+                    <h3>Tesla Model 3 - 3D model</h3>
+                </summary>
+                <img class="project-image" src="model3-hero1.jpg">
+                <img class="project-image" src="model3-hero2.jpg">
+            </details>
+            <details class="projects">
+                <summary class="project-title">
+                    <h3>Supernatural Game (UI/UX+Game Design+Drawing & Animating sprites)</h3>
+                </summary>
+                <img class="project-image" src="supernatural-hero1.jpg">
+                <img class="project-image" src="supernatural-hero2.jpg">
+                <img class="project-image" src="supernatural-hero3.png">
+                <img class="project-image" src="supernatural-hero4.jpg">
+            </details>
+            <details class="projects">
+                <summary class="project-title">
+                    <h3>Smartwatch Tycoon</h3>
+                </summary>
+                <img class="project-image" src="sw-hero1.jpg">
+                <img class="project-image" src="sw-hero2.jpg">
+                <img class="project-image" src="sw-hero3.jpg">
+                <img class="project-image" src="sw-hero4.jpg">
+                <img class="project-image" src="sw-hero5.jpg">
+                <img class="project-image" src="sw-hero6.jpg">
+            </details>
+            <details class="projects">
+                <summary class="project-title">
+                    <h3>Dating App (UI/UX)</h3>
+                </summary>
+                <img class="project-image" src="dating-hero1.png">
+                <img class="project-image" src="dating-hero2.png">
+                <img class="project-image" src="dating-hero3.png">
+            </details>
+            <details class="projects">
+                <summary class="project-title">
+                    <h3>Search&Destroy mobile game</h3>
+                </summary>
+                <img class="project-image" src="sd-hero1.png">
+                <img class="project-image" src="sd-hero2.png">
+                <img class="project-image" src="sd-hero3.png">
+                <img class="project-image" src="sd-hero4.png">
+                <img class="project-image" src="sd-hero5.png">
+                <img class="project-image" src="sd-hero6.png">
+            </details>
+            <details class="projects">
+                <summary class="project-title">
+                    <h3>Couples & Relationship app</h3>
+                </summary>
+                <img class="project-image" src="rl-hero1.png">
+                <img class="project-image" src="rl-hero2.png">
+            </details>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skills-container">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-react"></i>
+                <i class="fab fa-git"></i>
+                <i class="fas fa-terminal"></i>
+                <i class="fab fa-chrome"></i>
+                <i class="fab fa-figma"></i>
+                <i class="fab fa-python"></i>
+                <i class="fas fa-universal-access"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-npm"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Made with 
+        <span class="heart">♥</span>
+        in Sokal
+    </footer>
+    <script>
+
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "07-05-2016";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+    const now = new Date();
+    const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+    );
+
+    timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+    </script>
 </body>
- 
 </html>
