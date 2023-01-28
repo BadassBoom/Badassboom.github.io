@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/animated_text.css">
     <script src="https://kit.fontawesome.com/aa6bd16064.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/animate.css">
+	<link rel="stylesheet" href="js/aos.css">
+    <!-- <link rel="stylesheet" href="js/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="js/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/owl.theme.default.min.css">
+	<link rel="stylesheet" href="js/magnific-popup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;400;500;600&family=Proza+Libre:ital,wght@0,500;0,700;1,600&display=swap" rel="stylesheet">
@@ -14,7 +21,7 @@
 </head>
 <body>
     <nav>
-        <h2 id="logo">Badass Boom</h2>
+        <h2 id="logo">BadassBoom</h2>
         <ul class="nav-list">
             <li class="nav-item"><a href="#about-me">About me</a></li>
             <li class="nav-item"><a href="#projects">Projects</a></li>
@@ -26,34 +33,161 @@
         <section id="about-me">  
             <div class="about-me-container">
                 <div class="about-me-text-container">
-                    <h2>About Me</h2>
+                    <h2 class="cd-headline clip is-full-width">
+						Hello,
+						<br>
+						I'm Jaroslav <br>
+                    <span class="cd-words-wrapper text-color">
+                        <b class="is-visible">ML specialist. </b>
+                        <b>Computer Engineer.</b>
+                        <b>AI researcher.</b>
+                    </span>
+                    </h2>
+                    <!-- <h2>About Me</h2> -->
                     <p>
-                        Hi! I'm Jaroslav, future bilionaire and am an Ukrainian programmer
-                        and 3d designer. I have serious passion for game & apps development, UI effects
-                        and creating intuitive dynamic user expiriences. 
-                    </p>
-                    <p>
-                        I'm quietly curious naturally, and perpetually working on improving my chops. Well-organised person, problem-solver, independed employee.
-                        Fan of NBA, outdoor activities, TV series and
-                        neurobiology.
+                        I'm future bilionaire and an Machine Learning programmer based in Ukraine.
+                        I have serious passion for AI & data visualization, data science and creating intuitive dynamic user expiriences.
                     </p>
                     <p>
                         Interested in the entire Machine Learning spectrum and working on ambitious
-                        projects.Over the years, I've used hundreds of web and mobile apps in different industries and verticals. 
+                        projects. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. 
                         Eventually, I decided that it would be a fun challenge to try designing and building my own.
                     </p>
                     <p>
                         Fun fact! I've been programing for
-                        <span id="time-container">196,893,712</span>
+                        <span id="time-container">203,306,107</span>
                         seconds!
                     </p>
                 </div>
-            <img src="photoOfMe.jpg" class="portrait">
+            <img src="PhotoOfMe 2.jpg" class="portrait">
             </div>
         </section>
         <section id="projects">
             <h2>Projects</h2>
-            <details class="projects">
+            <section class="portfolio ">
+                <div class="container">
+                    <div class="row projects-row">
+                            <div>
+                                <div class="btn-group btn-group-toggle " data-toggle="buttons">
+                                <label class="btn active ">
+                                    <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="shuffle-filter" value="design" />Machine Learning
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="shuffle-filter" value="branding" />Data Analysis
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="shuffle-filter" value="illustration" />Web Development
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="shuffle-filter" value="photo" />Other
+                                </label>
+                            </div>
+                        </div>
+                    </div>	
+                    <div class="row shuffle-wrapper portfolio-gallery">
+                        <div class="col-lg-4 col-6 mb-4 shuffle-item"  data-groups="[&quot;illustration&quot;]">
+                                <div class="position-relative inner-box">
+                                <div class="image position-relative ">
+                                <img src="img/portfolio.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                                    <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a class="overlay-content" href="https://github.com/BadassBoom/Badassboom.github.io">
+                                        <h5 class="mb-0">Portfolio Web Site</h5>
+                                        <p>Web Development | HTML, CSS, JS</p>
+                                        </a>
+                                    </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+                            <div class="position-relative inner-box" >
+                                <div class="image position-relative ">
+                                <img src="img/US-Medical.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                                    <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                            <a class="overlay-content" href="https://github.com/BadassBoom/Data-Science-U.S.-Medical-Insurance-">
+                                            <h5 class="mb-0">US Medical Insurance Cost</h5>
+                                            <p>Data Analysis | Python</p>
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+                            <div class="position-relative inner-box">
+                                <div class="image position-relative ">
+                                <img src="img/ShoeStore.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                                    <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a class="overlay-content" href="https://github.com/BadassBoom/A-B-Testing-for-ShoeStore">
+                                        <h5 class="mb-0">A/B Testing For ShoeStore</h5>
+                                        <p>Data Analysis | Python, Pandas</p>
+                                        </a>
+                                    </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;photo&quot;]">
+                            <div class="position-relative inner-box">
+                                <div class="image position-relative ">
+                                <img src="img/SD.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                                    <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a class="overlay-content" href="https://play.google.com/store/apps/details?id=com.YourCompany.myproject">
+                                        <h5 class="mb-0">Search & Destroy</h5>
+                                        <p>Game Development | UE4, C++</p>
+                                        </a>
+                                    </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;]">
+                            <div class="position-relative inner-box">
+                                <div class="image position-relative ">
+                                <img src="img/dinnerBot.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                                    <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a class="overlay-content" href="https://github.com/BadassBoom/Restaurant-ChatBot">
+                                        <h5 class="mb-0">Retrieval-based ChatBot</h5>
+                                        <p>Machine Learning | Python, Spacy</p>
+                                        </a>
+                                    </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
+                            <div class="position-relative inner-box">
+                                <div class="image position-relative ">
+                                <img src="img/NBA.png" alt="portfolio-image" class="img-fluid w-100 d-block">
+                                    <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <a class="overlay-content" href="https://github.com/BadassBoom/NBA-Trends">
+                                        <h5 class="mb-0">NBA Trends</h5>
+                                            <p>Data Science | Python, pandas, numpy, seaborn, matplotlib</p>
+                                        </a>
+                                    </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <details class="projects">
                 <summary class="project-title">
                     <h3>Tesla website recreation</h3>
                 </summary>
@@ -122,7 +256,7 @@
                 </summary>
                 <img class="project-image" src="rl-hero1.png">
                 <img class="project-image" src="rl-hero2.png">
-            </details>
+            </details> -->
         </section>
         <section id="skills">
             <h2>Skills</h2>
@@ -151,7 +285,7 @@
     <script>
 
     const timeContainer = document.getElementById("time-container");
-    const BIRTH_DAY = "07-05-2016";
+    const BIRTH_DAY = "2016-05-07T22:10:00";
     const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
     const intlNumberFormatter = new Intl.NumberFormat("en-US");
 
@@ -164,5 +298,19 @@
     timeContainer.innerText = intlNumberFormatter.format(difference);
     }, 1000);
     </script>
+    <script src="js/jquery.min.js"></script>
+    
+    <script src="js/shuffle.min.js"></script>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/apear.js"></script>
+    <script src="js/counTo.js"></script>
+    <script src="js/animated_text.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
