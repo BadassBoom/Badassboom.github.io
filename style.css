@@ -386,6 +386,47 @@ footer {
     display: none
 } */
 
+/* Add or update this CSS for the marquee animation */
+#marquee {
+    margin-top: 50px;
+    overflow: hidden;
+    background-color: #ffffff; /* Set background color if needed */
+}
+
+.marquee-container {
+    display: flex;
+    justify-content: center; /* Center the images */
+    align-items: center; /* Center vertically */
+    width: 200%; /* Set the width to twice the size of a single set of images */
+    animation: marquee linear infinite; /* Use 'linear' for a smooth continuous loop */
+}
+
+.marquee-container img {
+    max-width: 100%; /* Make images responsive */
+    max-height: 100px; /* Set a max-height if needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 40px; /* Add margin between each image */
+    filter: grayscale(100%); /* Apply black and white filter */
+}
+
+/* Add this CSS if you want to add color on hover */
+.marquee-container img:hover {
+    filter: grayscale(0%); /* Remove the black and white filter on hover */
+}
+
+#marquee h2{
+margin-top: 10px;
+padding-bottom:50px;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0); /* Start from the center */
+    }
+    100% {
+        transform: translateX(-50%); /* Move to the left */
+    }
+}
+
 .btn {
     padding: 18px 38px;
     border: 2px solid transparent;
@@ -582,3 +623,21 @@ img {
         max-width: 500px;
     }
 }
+
+@media (max-width: 896px) {
+    .projects-row {
+        font-size: 12px;
+        overflow: scroll;
+        max-width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the projects */
+    }
+
+    .shuffle-item {
+        flex: 0 0 100%; /* Full width on mobile devices */
+        max-width: 100%; /* Full width on mobile devices */
+        margin-bottom: 16px; /* Adjust the margin as needed */
+    }
+}
+
