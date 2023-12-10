@@ -399,6 +399,7 @@ footer {
     align-items: center; /* Center vertically */
     width: 200%; /* Set the width to twice the size of a single set of images */
     animation: marquee linear infinite; /* Use 'linear' for a smooth continuous loop */
+    
 }
 
 .marquee-container img {
@@ -426,7 +427,11 @@ padding-bottom:50px;
         transform: translateX(-50%); /* Move to the left */
     }
 }
-
+@media only screen and (max-width: 768px) {
+    .marquee-container img {
+        max-width: 80px; /* Set a specific width for mobile screens */
+    }
+}
 .btn {
     padding: 18px 38px;
     border: 2px solid transparent;
